@@ -27,13 +27,14 @@ namespace WebApplicationAPIREST.Controllers
             Personne p1 = new Personne("Kerreman","Fabrice");
             Personne p2 = new Personne("Ajabli","Ahmed");
             Personne p3 = new Personne("Boumasour","Jamila");
-            Personne p4 = new Personne(nom, prenom);
+            Personne p4 = new Personne("Denis","Courtoy"); 
+            Personne p5 = new Personne(nom, prenom);
 
             // Je vais créer une liste de personne que je vais retourner.
 
             // créer un objet de type générique
 
-            List<Personne> listePersonne = new List<Personne> { p1, p2 ,p3, p4 };
+            List<Personne> listePersonne = new List<Personne> { p1, p2 ,p3, p4, p5 };
 
             _logger.LogInformation("Retourne" + listePersonne.Count + "élement ");
 
